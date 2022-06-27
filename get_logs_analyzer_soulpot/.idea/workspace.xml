@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b73e0e7-f35a-4a61-b3f4-85be55d1e709" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2AtYNGat6zChgOAEStS2lFCIB0C" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sandrinepatin/IdeaProjects/get_logs_analyzer_soulpot&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/sandrinepatin/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/221.5787.30/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/functions" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b73e0e7-f35a-4a61-b3f4-85be55d1e709" name="Changes" comment="" />
+      <created>1655765654861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655765654861</updated>
+      <workItem from="1655765656803" duration="3608000" />
+      <workItem from="1655830322690" duration="362000" />
+      <workItem from="1655834725716" duration="49000" />
+      <workItem from="1655834807176" duration="1377000" />
+      <workItem from="1655838252095" duration="290000" />
+      <workItem from="1655838555414" duration="264000" />
+      <workItem from="1655838957759" duration="2243000" />
+      <workItem from="1655920893183" duration="1607000" />
+      <workItem from="1655935300912" duration="2618000" />
+      <workItem from="1656017673506" duration="4319000" />
+      <workItem from="1656100586741" duration="642000" />
+      <workItem from="1656156541115" duration="11533000" />
+      <workItem from="1656188485530" duration="1418000" />
+      <workItem from="1656198185841" duration="47000" />
+      <workItem from="1656198290107" duration="891000" />
+      <workItem from="1656349119463" duration="377000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
