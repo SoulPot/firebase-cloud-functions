@@ -148,7 +148,7 @@ exports.onAnalyzerValueChange = functions.region("europe-west1").firestore
                 })
             });
 
-            if (oldValue.userID === undefined) {
+            if (oldValue.userID === undefined || oldValue.userID !== newValue.userID) {
                 db.doc('users/' + newValue.userID).get().then(user => {
                     let analyzers_counter = user["analyzers_count"] === undefined ? 1 : user["analyzers_count"];
                     db.doc('users/' + newValue.userID).set({
@@ -183,6 +183,7 @@ exports.onNewAnalyzer = functions.region("europe-west1").firestore
 exports.onDeleteAnalyzer = functions.region("europe-west1").firestore
     .document('analyzers/{analyzerID}')
     .onDelete((snapshot, context) => {
+        const analyzer = snapshot;
         const deletedAnalyzer = snapshot.data();
 
         //Mise à jour du compteur d'Analyzers
@@ -194,6 +195,13 @@ exports.onDeleteAnalyzer = functions.region("europe-west1").firestore
                 })
             })
         }
+
+        admin.firestore().collection('analyzers/' + snapshot.id + '/logs').get().then(snapshot => {
+            snapshot.forEach(doc => {
+                    db.doc('analyzers/' + analyzer.id + '/logs/' + doc.id).delete()
+                }
+            )
+        })
     });
 
 exports.onUpdateUser = functions.region("europe-west1").firestore
@@ -211,8 +219,8 @@ exports.onUpdateUser = functions.region("europe-west1").firestore
 
                         let progress = user["analyzers_count"] * 100 / objectiveData["objective_value"];
 
-                        if (obj_own.data() !== undefined ) {
-                            if(obj_own.data()["owned"] !== true){
+                        if (obj_own.data() !== undefined) {
+                            if (obj_own.data()["owned"] !== true) {
                                 if (objectiveData["field"] !== undefined && objectiveData["field"].includes("analyzers_count")) {
                                     if (progress >= 100) {
                                         db.doc('users/' + context.params.userID + '/objectives_owned/' + doc.id).set({
